@@ -1,0 +1,2 @@
+[your_target_group]
+your_target_host ansible_host=172.31.34.110
