@@ -4,11 +4,10 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh '''
+        sh 'ansible-playbook -i /home/ubuntu/opt/playbooks/hosts /home/ubuntu/opt/playbooks/nginx1-install.yml'
           ansible --version
           ansible-playbook --version
           ansible-galaxy --version
-        '''
       }
     }
   }
